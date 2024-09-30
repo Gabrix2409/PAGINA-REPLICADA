@@ -1,0 +1,258 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005299;
+    border-radius: 5px;
+}
+
+/* Sección de Historia */
+.historia-section {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.historia-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.historia-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.historia-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Sección de Misión y Visión */
+.mision-section, .vision-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.mision-container, .vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mision-container h2, .vision-container h2 {
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.mision-container p, .vision-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Sección de Valores */
+.valores-section {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.valores-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.valores-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.valores-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valores-container ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.valores-container ul li strong {
+    color: #005299;
+}
+
+/* Sección de Contacto */
+.contacto-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.contacto-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacto-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.contacto-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto-container form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contacto-container form input,
+.contacto-container form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contacto-container form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #003366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contacto-container form button:hover {
+    background-color: #005299;
+}
+
+/* Pie de página */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.footer-container nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footer-container nav ul li {
+    margin-left: 20px;
+}
+
+.footer-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-container nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .historia-container p, 
+    .mision-container p, 
+    .vision-container p {
+        text-align: left;
+    }
+}
